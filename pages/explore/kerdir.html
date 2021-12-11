@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/explore.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script defer src="/assets/scripts/kerdir.js"></script>
+    <title>Kerdir Inscription - Set in Stone</title>
+</head>
+<body>
+    <div class="supreme-container" id="app">
+        <div class="top-container">
+            <div class="header-container">
+                <div class="header-text">
+                    <a href="/" class="header-main-title">Set in Stone</a>
+                    <div class="header-main-subtitle">A Comparative Exhibit of Royal Sasanian Inscriptions</div>
+                </div>
+                <br>
+                <div class="header-menus-container">
+                    <a href="/pages/gallery.html" class="gallery-menu header-menu">
+                        <div id="gallery-menu-btn" class="header-menu-btn">
+                            <span>Gallery</span>
+                        </div>    
+                    </a>
+                    <div class="explore-menu header-menu">
+                        <div id="explore-menu-btn" class="header-menu-btn">
+                            <span>Explore</span>
+                        </div>
+                        <div id="explore-menu-dropdown" class="header-menu-dropdown">
+                            <div><a href="./great-inscription.html">Great Inscription of Shapur I</a></div>
+                            <div><a href="./paikuli.html">Paikuli Inscription</a></div>
+                            <div><a href="./kerdir.html">Kerdir Inscription</a></div>
+                        </div>    
+                    </div>
+                    <div class="articles-menu header-menu">
+                        <div id="articles-menu-btn" class="header-menu-btn">
+                            <span>Articles</span>
+                        </div>
+                        <div id="articles-menu-dropdown" class="header-menu-dropdown">
+                            <div><a href="/pages/articles/geography.html">Geography</a></div>
+                            <div><a href="/pages/articles/form.html">Form</a></div>
+                            <div><a href="/pages/articles/kingship.html">Kingship</a></div>
+                            <div><a href="/pages/articles/religion.html">Religion</a></div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="article-container">
+                <div class="article-title">Kerdir Inscription</div>
+                <div class="article-subtitle"></div>
+                <hr>
+                <div class="half-image-container">
+                    <div>
+                        Kerdir (Kartir) was an attendant to the Sasanian kings Ardashir, Shapur I, Hormizd, Bahram I, and Bahram II. Under each king, Kerdir was granted more responsibilities and a more honorable title. At the end of his career, "Kerdir, soul-saver of Bahram, Mowbed of Ohrmezd" was the chief priest <i>(mowbed)</i>, statewide judge <i>(dadwar)</i>, and master of the fires of Anahid-Ardashir and Anahid the Lady in Stakhr. Under his influence, many Wahram fires were established, ritual observances were increased, and non-Mazdayasnians were persecuted across the empire. We know all this from his inscription, in which he lists his religious and political accomplishments under each king and describes a vision of the Zoroastrian afterlife granted by the gods. 
+                        <br><br>
+                        Kerdir's inscription is notable because it is not a singular inscription--four versions were found in four different locations: beside the investiture relief of Ardashir at Naqsh-e Rajab (KNRb), beside the Triumph of Shapur at Naqsh-e Rostam (KNRm), beneath Shapur's Great Inscription on the east wall of the Ka'ba-ye Zartosht (KKZ), and beneath a relief of Bahram II at Sar Mashhad (KSM). The KSM and KNRm versions are nearly identical and the longest of the four; KKZ omits the vision of the afterlife, and KNRb is an abridged version of KSM/KNRm. The (relative) ubiquity of Kerdir's inscription seems to affirm the authority and influence he claims therein, and it is truly remarkable that more copies of his deeds remain than of the kings under whom he served.
+                        </div>
+                    <div class="image-container" pic-caption="Kerdir's inscription at Naqsh-e Rajab (KNRb).">
+                        <img src="/assets/images/kerdir at naqsh e rajab.jpg">
+                    </div>      
+                </div>
+                <br><br>
+                <div class="gallery-container">
+                    <div class="gallery-image-container" pic-caption="The Triumph of Shapur I at Naqsh-e Rostam. Kerdir's inscription can be seen at the rear of the horse. Above the inscription is a relief of Kerdir wearing his ceremional cap. (Click to view)">
+                        <img src="/assets/images/shapur triumph naqsh e rostam.jpg" id="knrm">
+                    </div>
+                    <div class="gallery-image-container hidden" pic-caption="A closeup of the Middle Persian Kerdir inscription on the Ka'ba-ye Zartosht (KKZ).">
+                        <img src="/assets/images/kartir at ka'baye zartosht.jpg" id="kkz">
+                    </div>
+                    <div class="gallery-image-container hidden" pic-caption="The relief of Bahram II at Sar Mashhad, the location of Kerdir's KSM inscription.">
+                        <img src="/assets/images/bahram ii sar mashhad.jpg" id="bahram">
+                    </div>
+                    <div class="gallery-image-container hidden" pic-caption="A negative of the KSM inscription produced by the German archaeologist Ernst Herzfeld. Herzfeld, one of the foremost Near Eastern scholars of the 20th century, performed pioneering work on Sasanian inscriptions.">
+                        <img src="/assets/images/kartir sar mashhad.jpg" id="ksm">
+                    </div>
+                    <div id="gallery-left-btn" @click="galleryNavLeft" class="gallery-nav-btn">‹</div>
+                    <div id="gallery-right-btn" @click="galleryNavRight" class="gallery-nav-btn">›</div>    
+                </div>
+                <br><br>
+                <div class="article-subtitle">Bibliography</div>
+                <hr>
+                <div>Prods Oktor Skjærvø, “KARTIR,” Encyclopædia Iranica, XV/6, pp. 608-628, available online at <a href="http://www.iranicaonline.org/articles/kartir">http://www.iranicaonline.org/articles/kartir</a>.</div>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div class="bottom-text-left">Sage Kanemaru</div>
+            <div class="bottom-text-right">HUM 247 / Fall 2021</div>
+        </div>
+    </div>
+</body>
+</html>

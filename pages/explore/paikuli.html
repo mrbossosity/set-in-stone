@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/explore.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script defer src="/assets/scripts/paikuli.js"></script>
+    <title>Paikuli Inscription - Set in Stone</title>
+</head>
+<body>
+    <div class="supreme-container" id="app">
+        <div class="top-container">
+            <div class="header-container">
+                <div class="header-text">
+                    <a href="/" class="header-main-title">Set in Stone</a>
+                    <div class="header-main-subtitle">A Comparative Exhibit of Royal Sasanian Inscriptions</div>
+                </div>
+                <br>
+                <div class="header-menus-container">
+                    <a href="/pages/gallery.html" class="gallery-menu header-menu">
+                        <div id="gallery-menu-btn" class="header-menu-btn">
+                            <span>Gallery</span>
+                        </div>    
+                    </a>
+                    <div class="explore-menu header-menu">
+                        <div id="explore-menu-btn" class="header-menu-btn">
+                            <span>Explore</span>
+                        </div>
+                        <div id="explore-menu-dropdown" class="header-menu-dropdown">
+                            <div><a href="./great-inscription.html">Great Inscription of Shapur I</a></div>
+                            <div><a href="./paikuli.html">Paikuli Inscription</a></div>
+                            <div><a href="./kerdir.html">Kerdir Inscription</a></div>
+                        </div>    
+                    </div>
+                    <div class="articles-menu header-menu">
+                        <div id="articles-menu-btn" class="header-menu-btn">
+                            <span>Articles</span>
+                        </div>
+                        <div id="articles-menu-dropdown" class="header-menu-dropdown">
+                            <div><a href="/pages/articles/geography.html">Geography</a></div>
+                            <div><a href="/pages/articles/form.html">Form</a></div>
+                            <div><a href="/pages/articles/kingship.html">Kingship</a></div>
+                            <div><a href="/pages/articles/religion.html">Religion</a></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="article-container">
+                <div class="article-title">Paikuli Tower</div>
+                <div class="article-subtitle">Narseh's Inscription</div>
+                <hr>
+                <div class="half-image-container">
+                    <div class="image-container" pic-caption="The rock relief of Narseh at Naqsh-e Rostam.">
+                        <img src="/assets/images/narseh relief naqsh e rostam.jpg">
+                    </div>
+                    <div>
+                        Narseh was the seventh king of the Sassanid Empire. The youngest son of Shapur I and grandson of Ardashir, Narseh was siblings with Hormizd I and Bahram I. Narseh's rise was fraught with family conflict. Bahram had no claim to the throne due to the low status of his mother, and Narseh ranked higher in Shapur's eyes despite being younger than Bahram. However, when Hormizd died, Bahram gave Nasreh the viceroyalty of Armenia in exchange for his right to the throne. Bahram and his son, Bahram II, held the throne for 24 years. 
+                        <br><br>
+                        When Bahram II died, his son (Bahram III) was crowned through the machinations of the nobleman Wahnam. The rest of the nobility rejected Bahram III's candidacy and supported Narseh's ascendancy. The conflict threatened civil war, but Bahram conceded the crown to his grand-uncle Narseh. Wahnam was executed, and Bahram III died (or was killed) under mysterious circumstances.
+                        <br><br>
+                        Narseh erected the Paikuli Tower as a monument to victory. The tower, which now lies in ruins, features five busts and an inscription of Narseh in both Parthian and Middle Persian. Ernst Herzfeld's work from 1911 to 1924 focused on determing the tower's original structure, translating 129 inscribed blocks, and placing/ordering them within his model. More recent scholarship has produced a coherent, albeit still incomplete reproduction of the tower and inscription. The inscription gives Narseh's titles and geneaology and goes on to narrate the succession crisis involving Wahnam and the nobility. Narseh concludes by listing all of his supporters by name as well as the dignitaries and kings who acknowledged his right to rule. Not only does Narseh's royal inscription stand apart from the rest in a physical and temporal sense, but it functions both as a historical document and as a legitimizing instrument.              
+                    </div>
+                </div>
+                <br><br>
+                <div class="gallery-container">
+                    <div class="gallery-image-container" pic-caption="The west wall of Paikuli Tower. Herzfeld speculated that the monument was once tall and square--all that remains now is a portion of the base.">
+                        <img src="/assets/images/paikuli tower west wall.jpg" id="ptww">
+                    </div>
+                    <div class="gallery-image-container hidden" pic-caption="The Sulaymaniyah Museum in Iraq (not far from the Tower itself) houses all the inscribed blocks recovered from the ruins.">
+                        <img src="/assets/images/sulaymaniyah museum preparations.jpg" id="smp">
+                    </div>
+                    <div class="gallery-image-container hidden" pic-caption="Block B15 of Paikuli Tower. The block's index (B15) describes its position within the reconstructed model of the Tower and aids in translation. This script is in Middle Persian.">
+                        <img src="/assets/images/paikuli block b15.jpg" id="pb15">
+                    </div>
+                    <div class="gallery-image-container hidden" pic-caption="Block f1 of Paikuli Tower. This block is exceptional for its round shape and likely formed a corner of the tower.">
+                        <img src="/assets/images/paikuli block f1.jpg" id="pbf1">
+                    </div>
+                    <div id="gallery-left-btn" @click="galleryNavLeft" class="gallery-nav-btn">‹</div>
+                    <div id="gallery-right-btn" @click="galleryNavRight" class="gallery-nav-btn">›</div>    
+                </div>
+                <br><br>
+                <div class="article-subtitle">Bibliography</div>
+                <hr>
+                <p>Helmut Humbach and Prods Skjærvø, “The Sassanian Inscription of Paikuli - Restored text and translation,” Wiesbaden, 1983, accessed online at <a href="https://web.archive.org/web/20070927205815/http://www.sasanika.com/pdf/Paikuli.pdf">https://web.archive.org/web/20070927205815/http://www.sasanika.com/pdf/Paikuli.pdf</a>.</p>
+                <p>Prods Skjærvø, “HERZFELD, ERNST iv. HERZFELD AND THE PAIKULI INSCRIPTION,” Encyclopædia Iranica, XII/3, pp. 298-300, available online at <a href="https://iranicaonline.org/articles/herzfeld-ernst-iv">https://iranicaonline.org/articles/herzfeld-ernst-iv</a>.</p>
+                <div>Ursula Weber, “NARSEH,” Encyclopædia Iranica, online edition, 2016, available at <a href="http://www.iranicaonline.org/articles/narseh-sasanian-king">http://www.iranicaonline.org/articles/narseh-sasanian-king</a>.</div>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div class="bottom-text-left">Sage Kanemaru</div>
+            <div class="bottom-text-right">HUM 247 / Fall 2021</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script defer src="./assets/scripts/index.js"></script>
+    <title>Set in Stone - Sasanian Inscriptions</title>
+</head>
+<body>
+    <div class="supreme-container" id="app">
+        <div class="top-container">
+            <div class="header-container">
+                <div class="header-text">
+                    <a href="/" class="header-main-title">Set in Stone</a>
+                    <div class="header-main-subtitle">A Comparative Exhibit of Royal Sasanian Inscriptions</div>
+                </div>
+                <br>
+                <div class="header-menus-container">
+                    <a href="/pages/gallery.html" class="gallery-menu header-menu">
+                        <div id="gallery-menu-btn" class="header-menu-btn">
+                            <span>Gallery</span>
+                        </div>    
+                    </a>
+                    <div class="explore-menu header-menu">
+                        <div id="explore-menu-btn" class="header-menu-btn">
+                            <span>Explore</span>
+                        </div>
+                        <div id="explore-menu-dropdown" class="header-menu-dropdown">
+                            <div><a href="./pages/explore/great-inscription.html">Great Inscription of Shapur I</a></div>
+                            <div><a href="./pages/explore/paikuli.html">Paikuli Inscription</a></div>
+                            <div><a href="./pages/explore/kerdir.html">Kerdir Inscription</a></div>
+                        </div>    
+                    </div>
+                    <div class="articles-menu header-menu">
+                        <div id="articles-menu-btn" class="header-menu-btn">
+                            <span>Articles</span>
+                        </div>
+                        <div id="articles-menu-dropdown" class="header-menu-dropdown">
+                            <div><a href="/pages/articles/geography.html">Geography</a></div>
+                            <div><a href="/pages/articles/form.html">Form</a></div>
+                            <div><a href="/pages/articles/kingship.html">Kingship</a></div>
+                            <div><a href="/pages/articles/religion.html">Religion</a></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="gallery-container">
+                <div class="left-gallery">
+                    <div class="left-image-container">
+                        <iframe class="gallery-iframe" src="https://www.google.com/maps/embed?pb=!4v1638503096973!6m8!1m7!1sCAoSLEFGMVFpcE16THBDX21ReU5rV1ZYemRaRDZVME83N1M0akhPQm9JUmhON0ZO!2m2!1d29.98840259!2d52.87409663!3f301.39580569115327!4f25.78501800429561!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="left-image-container hidden" pic-caption="A closeup of the Parthian script from Shapur's inscription on the east wall of Ka'be-ye Zartosht.">
+                        <img class="gallery-iframe" src="./assets/images/shapur inscription text parthian.png">
+                    </div>
+                    <div class="left-image-container hidden">
+                        <iframe class="gallery-iframe" src="https://www.google.com/maps/embed?pb=!4v1638507069750!6m8!1m7!1sCAoSLEFGMVFpcE1NSVp6UzFIRHA0dlFUd09BMWlnOTBGdmxLdi1xYlBjODFlYW9U!2m2!1d29.9665899!2d52.8873827!3f92.03689263778608!4f22.14742248962959!5f2.299968626952992" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="left-image-container hidden" pic-caption="A block from Paikuli Tower inscribed in Parthian. The Sulaymaniyah Museum houses a collection of all inscribed blocks recovered from the ruins of the Tower.">
+                        <img class="gallery-iframe" src="./assets/images/paikuli block.jpg">               
+                    </div>
+                </div>
+                <div class="right-gallery">
+                    <div class="right-image-container" pic-caption="Ka'be-ye Zartosht (The Cube of Zoroaster), upon which the Great Inscription of Shapur I is carved. The Ka'ba stands opposite the rock reliefs of Naqsh-e Rostam, a royal Achaemenid necropolis.">
+                        <img class="gallery-image" src="./assets/images/ka'baye zartosht.jpg">
+                    </div>
+                    <div class="right-image-container hidden" pic-caption="The west wall of Ka'ba-ye Zartosht. The Middle Persian version of Shapur's inscription can be faintly seen on the second and third brick rows from the bottom. (Click to view)">
+                        <img id="zartosht-wall-script" src="/assets/images/zartosht-wall-with-inscriptions.jpg" style="cursor: pointer;">
+                    </div>
+                    <div class="right-image-container hidden" pic-caption="Kartir's (Kerdir's) Inscription at Naqsh-e Rajab. The inscription is flanked on the right by the investiture relief of Ardashir, the founder of the Sassanid Empire.">
+                        <img class="gallery-image" src="./assets/images/kerdir at naqsh e rajab.jpg">
+                    </div>
+                    <div class="right-image-container hidden" pic-caption="The ruins of Paikuli Tower, whose walls contained blocks inscribed in Parthian and Persian commemorating a victory of Narseh, the seventh Sasanian king. The large blocks in the foreground are uninscribed.">
+                        <img class="gallery-image" src="./assets/images/paikuli tower 1.jpg">
+                    </div>
+                </div>
+                <div id="gallery-left-btn" @click="galleryNavLeft" class="gallery-nav-btn">‹</div>
+                <div id="gallery-right-btn" @click="galleryNavRight" class="gallery-nav-btn">›</div>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div class="bottom-text-left">Sage Kanemaru</div>
+            <div class="bottom-text-right">HUM 247 / Fall 2021</div>
+        </div>
+    </div>
+</body>
+</html>
