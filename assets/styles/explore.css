@@ -15,10 +15,6 @@ ul {
     margin: 0;
 }
 
-.hidden {
-    display: none;
-}
-
 .supreme-container {
     height: 100vh;
     display: grid;
@@ -156,7 +152,7 @@ ul {
 .gallery-image-container[pic-caption]:hover::after {
     content: attr(pic-caption);
     position: absolute;
-    left: 0; bottom: 0.4em;
+    left: 0; bottom: 0;
     font-size: 1em;
     color: white;
     background-color: rgba(0,0,0,0.5);
@@ -164,21 +160,27 @@ ul {
     z-index: 1;
 }
 
+.gallery-image-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .gallery-container {
-    margin: auto;
-    padding: 0 8em;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(50,50,50);
-    border: 10px outset tan;
+    border: 5px outset tan;
     position: relative;
 }
 
 .gallery-image-container > img {
-    object-fit: contain;
+    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
+    margin: auto;
     cursor: pointer;
 }
 
@@ -214,6 +216,10 @@ ul {
 .full-iframe {
     width: 100%;
     aspect-ratio: 7 / 3;
+}
+
+.hidden {
+    display: none;
 }
 
 .bottom-container {
